@@ -25,6 +25,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import GenericPage from './pages/GenericPage';
 
 const router = createBrowserRouter([
   {
@@ -68,12 +69,12 @@ const router = createBrowserRouter([
     element: <Sesion/>,
   },
   {
-    path: "/calendar",
-    element: <Calendar/>,
+    path: "/guardado",
+    element: <GenericPage title="Guardado"/>,
   },
   {
     path: "/agregar",
-    element: <Agregar/>,
+    element: <GenericPage title="Agregar"/>,
   },
 ]);
 
