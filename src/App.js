@@ -5,7 +5,7 @@ import backgroundImage from './fondo.jpg';
 import pollo from './pollo.jpg'; 
 import SearchBar from './components/SearchBar.js';
 
-function App() {
+function App({ apiURL = "http://localhost:5001/recipes" }) {
   const [allRecipes, setAllRecipes] = useState([]);
   const handleSearchResults = (searchResults) => {
     console.log("Datos de búsqueda recibidos:", searchResults);
@@ -13,7 +13,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5001/recipes")
+    fetch(apiURL)
       .then((res) => res.json())
       .then((data) => {
         setAllRecipes(data.recipes);
