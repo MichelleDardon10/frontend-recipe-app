@@ -23,6 +23,7 @@ function Home() {
   return (
     
     <div className="menu-container">
+      <div className="menu-item"><Link to="/" style={linkStyle}>Feed</Link></div>
       <div className="menu-item"><Link to="/ensaladas" style={linkStyle}>Ensaladas</Link></div>
       <div className="menu-item"><Link to="/pollos" style={linkStyle}>Pollos</Link></div>
       <div className="menu-item"><Link to="/popular" style={linkStyle}>Popular</Link></div>
