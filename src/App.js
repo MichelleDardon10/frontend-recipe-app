@@ -122,6 +122,7 @@ function App({ apiURL = "http://localhost:5001/recipes" }) {
                 <h2 style={recipeTitle}>{recipe.name}</h2>
                 <p style={recipeFont}>Posted by: {recipe.post_by}</p>
                 <p style={recipeFont}>Valoration: {recipe.valoration}</p>
+                <p style={recipeFont}>Favorite: {recipe.destacado}</p>
                 <img src={pollo} alt={recipe.name} style={{ maxWidth: '200px', height: 'auto', marginLeft: '30px' }} />
                 <h3 style={recipeSubtitle}>Ingredients:</h3>
                 <ul>
