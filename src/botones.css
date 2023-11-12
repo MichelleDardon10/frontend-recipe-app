@@ -48,7 +48,7 @@
   z-index: 999;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  background-image: url('estrella.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la URL de tu imagen */
+  background-image: url('calendario.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la URL de tu imagen */
   background-size: 10% 10% !important; /* Ajusta el tamaño de la imagen al 50% del botón */
   background-repeat: no-repeat;
   background-position: center center;

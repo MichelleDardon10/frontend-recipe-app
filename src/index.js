@@ -15,9 +15,9 @@ import Mariscos from './components/Mariscos';
 import Bebidas from './components/Bebidas';
 
 //import Pages
-import Calendario from './pages/Calendario';
+//import Agregar from './pages/Agregar';
 import Sesion from './pages/Sesion';
-import Destacado from './pages/Destacado';
+//import Calendar from './pages/Calendar';
 
 
 //import libreria Router para uso de pages
@@ -69,12 +69,12 @@ const router = createBrowserRouter([
     element: <Sesion/>,
   },
   {
-    path: "/destacado",
-    element: <Destacado/>,
+    path: "/guardado",
+    element: <GenericPage title="Guardado"/>,
   },
   {
-    path: "/calendario",
-    element: <Calendario/>,
+    path: "/agregar",
+    element: <GenericPage title="Agregar"/>,
   },
 ]);
 
