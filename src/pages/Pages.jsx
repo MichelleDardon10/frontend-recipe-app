@@ -2,8 +2,8 @@ import Home from './Home'
 import React from 'react'
 import '../botones.css';
 import { Link } from 'react-router-dom';
-import estrella from '../estrella.png';
-import calendario from '../calendario.png';
+import calendario from '../calendario.jpg';
+import plus from '../plus.jpg';
 
 function Pages() {
   return (
@@ -20,14 +20,14 @@ function Pages() {
       </div>
 
       <div className="calendario-button">
-        <Link to="/destacado" className="boton-calendario">
-          <img src={estrella} alt="Calendario" />
+        <Link to="/guardado" className="boton-calendario">
+          <img src={calendario} alt="Calendario" />
         </Link>
       </div>
       
       <div className="agregar-recetas-button"> {/* Agrega una nueva clase para el botón de agregar recetas */}
-        <Link to="/calendario" className="boton-agregar-recetas">
-          <img src={calendario} alt="Agregar Recetas" />
+        <Link to="/agregar" className="boton-agregar-recetas">
+          <img src={plus} alt="Agregar Recetas" />
         </Link>
       </div>
     </div>
