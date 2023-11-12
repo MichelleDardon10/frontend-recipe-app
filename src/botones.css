@@ -1,4 +1,7 @@
 /*BOTON INICIO SESION*/
+
+/*import calendario from 'calendario.jpg';*/
+
 .person-button {
   display: inline-block;
   padding: 10px 10px;
@@ -45,6 +48,10 @@
   z-index: 999;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  background-image: url('calendario.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la URL de tu imagen */
+  background-size: 10% 10% !important; /* Ajusta el tamaño de la imagen al 50% del botón */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .boton-calendario:hover {
@@ -84,4 +91,24 @@
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+}
+
+.calendar-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.go-back-button {
+  background-color: #FFA500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: left;
+}
+
+.calendar-title {
+  font-size: 24px;
+  margin-top: 10px;
 }

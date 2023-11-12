@@ -24,7 +24,7 @@ function SearchBar({ placeholder, data, onSearchResults }) {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      fetch(`/search?term=${wordEntered}`)
+      fetch(`http://localhost:5001/search?term=${wordEntered}`)
         .then((response) => response.json())
         .then((data) => {
           if (typeof onSearchResults === 'function') {

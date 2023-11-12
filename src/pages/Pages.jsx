@@ -20,7 +20,7 @@ function Pages() {
       </div>
 
       <div className="calendario-button">
-        <Link to="/calendar" className="boton-calendario">
+        <Link to="/guardado" className="boton-calendario">
           <img src={calendario} alt="Calendario" />
         </Link>
       </div>
