@@ -23,7 +23,9 @@
         "steps": [
             "Marinar el pollo en sal y pimienta",
             "Asar el pollo a la parrilla"
-        ]
+        ],
+        
+        "destacado": 4
     },
     {
         "id": 2,
