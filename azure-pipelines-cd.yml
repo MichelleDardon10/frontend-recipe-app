@@ -1,8 +1,7 @@
-
 trigger:
   branches:
     include:
-      - development
+      - master
 
 pool:
   vmImage: ubuntu-latest
@@ -13,7 +12,7 @@ jobs:
   steps:
   - checkout: self
 
-  - script: 'docker build -t frontend .'
+  - script: 'docker build --build-arg REACT_APP_TITLE=CocaUn100 -t frontend .'
     displayName: 'Build Docker Image'
 
   - script: 'docker run -d -p 3000:3000 --name frontend frontend'

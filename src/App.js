@@ -7,6 +7,7 @@ import SearchBar from './components/SearchBar.js';
 
 function App({ apiURL = "http://localhost:5001/recipes" }) {
   const [allRecipes, setAllRecipes] = useState([]);
+  const title = process.env.REACT_APP_TITLE;
   const handleSearchResults = (searchResults) => {
     console.log("Datos de búsqueda recibidos:", searchResults);
     setAllRecipes(searchResults);
@@ -104,7 +105,7 @@ function App({ apiURL = "http://localhost:5001/recipes" }) {
   return (
     <div style={backgroundStyles}>
       <div style={titleContainerStyles}>
-        <h1 style={titleStyles}>RecipesApp</h1>
+        <h1 style={titleStyles}>{title}</h1>
       </div>
       <div className='App'>
         {Array.isArray(allRecipes) && (
