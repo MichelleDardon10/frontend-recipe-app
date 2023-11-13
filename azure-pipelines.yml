@@ -1,0 +1,17 @@
+trigger:
+- development
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: BuildAndRunDocker
+  displayName: 'Build and Run Docker'
+  steps:
+  - checkout: self
+
+  - script: 'docker build -t frontend .'
+    displayName: 'Build Docker Image'
+
+  - script: 'docker run -d -p 3000:3000 --name frontend frontend'
+    displayName: 'Run Docker Container'
