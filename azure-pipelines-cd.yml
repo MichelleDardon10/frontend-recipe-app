@@ -1,0 +1,19 @@
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: BuildAndRunDocker
+  displayName: 'Build and Run Docker'
+  steps:
+  - checkout: self
+
+  - script: 'docker build --build-arg REACT_APP_TITLE=CocaUn100 -t frontend .'
+    displayName: 'Build Docker Image'
+
+  - script: 'docker run -d -p 3000:3000 --name frontend frontend'
+    displayName: 'Run Docker Container'
